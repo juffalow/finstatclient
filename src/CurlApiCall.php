@@ -29,7 +29,7 @@ class CurlApiCall implements ApiCallInterface {
         curl_close ($ch);
 
         if($httpCode != 200) {
-            throw new Exception("API Error!", $httpCode);
+            throw new \Exception("API Error!", $httpCode);
         }
 
         return $response;
