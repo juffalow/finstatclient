@@ -10,7 +10,9 @@
         }
     ],
     "require": {},
-    "require-dev": {},
+    "require-dev": {
+        "phpunit/phpunit": "5.7.*"
+    },
     "autoload": {
         "psr-4": {
             "juffalow\\finstatclient\\": "src"

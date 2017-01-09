@@ -9,7 +9,7 @@ API client for [FinStat](http://finstat.sk/api) service.
 
 require __DIR__ . '/vendor/autoload.php';
 
-$client = new juffalow\finstatclient\Client('<your api key>', '<your private key>', null, null);
+$client = new juffalow\finstatclient\Client('<your api key>', '<your private key>');
 
 $detail = $client->getCompanyDetail('35757442');
 

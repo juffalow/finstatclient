@@ -13,6 +13,7 @@ interface ApiCallInterface {
      * @param string $url
      * @param array $params
      * @return object
+     * @throws Exception
      */
     public function call($url, $params);
 }

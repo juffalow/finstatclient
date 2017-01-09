@@ -2,6 +2,8 @@
 
 namespace juffalow\finstatclient;
 
+use juffalow\finstatclient\ApiCallInterface;
+
 /**
  *
  *
@@ -42,13 +44,13 @@ class Client {
      * @param string $stationId
      * @param string $stationName
      */
-    public function __construct($apiKey, $privateKey, $stationId, $stationName) {
+    public function __construct($apiKey, $privateKey, $stationId = null, $stationName = null, ApiCallInterface $apiCall = null) {
         $this->apiKey = $apiKey;
         $this->privateKey = $privateKey;
         $this->stationId = $stationId;
         $this->stationName = $stationName;
 
-        $this->apiCall = new CurlApiCall();
+        $this->apiCall = $apiCall !== null ? $apiCall : new CurlApiCall();
     }
 
     /**
