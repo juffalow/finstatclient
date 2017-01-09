@@ -1,0 +1,19 @@
+{
+    "name": "juffalow/finstatclient",
+    "description": "FinStat API client",
+    "license": "MIT",
+    "keywords": ["finstat"],
+    "authors": [
+        {
+            "name": "Matej Jellus",
+            "email": "juffalow@juffalow.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "juffalow\\finstatclient\\": "src"
+        }
+    }
+}
