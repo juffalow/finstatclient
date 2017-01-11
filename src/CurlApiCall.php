@@ -29,10 +29,29 @@ class CurlApiCall implements ApiCallInterface {
         curl_close ($ch);
 
         if($httpCode != 200) {
-            throw new \Exception("API Error!", $httpCode);
+            throw new \Exception($this->getErrorMessage($httpCode), $httpCode);
         }
 
         return $response;
+    }
+
+    /**
+     *
+     * @param int $apiErrorCode
+     * @return String error message based on API error code
+     */
+    protected function getErrorMessage($apiErrorCode) {
+        switch((int) $apiErrorCode) {
+            case 28:
+                return "Timeout!";
+            case 402:
+                return "The daily limit has exceeded!";
+            case 403:
+                return "Unauthorized!";
+            case 404:
+                return "ICO not found!";
+        }
+        return "API error occured!";
     }
 
     /**
