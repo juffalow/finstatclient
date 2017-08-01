@@ -1,5 +1,7 @@
 # FinStat PHP Client
 
+[![npm version](https://img.shields.io/npm/v/finstatclient.svg?style=flat)](https://www.npmjs.com/package/finstatclient) [![npm downloads](https://img.shields.io/npm/dm/finstatclient.svg?style=flat)](https://www.npmjs.com/package/finstatclient)
+
 API client for [FinStat](http://finstat.sk/api) service.
 
 # Tech
