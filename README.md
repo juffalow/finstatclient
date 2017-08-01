@@ -1,5 +1,7 @@
 # FinStat PHP Client
 
+[![Packagist](https://img.shields.io/packagist/v/juffalow/finstatclient.svg)](https://packagist.org/packages/juffalow/finstatclient) [![Packagist](https://img.shields.io/packagist/dm/juffalow/finstatclient.svg)](https://packagist.org/packages/juffalow/finstatclient)
+
 API client for [FinStat](http://finstat.sk/api) service.
 
 # Tech
